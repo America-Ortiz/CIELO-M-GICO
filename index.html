@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBalloons | Vuelos en Globo Aerostático</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="floating-menu">
+        <input type="checkbox" class="floating-menu-toggle" id="floating-menu-toggle">
+        <label for="floating-menu-toggle" class="floating-menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="floating-menu-items">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#nosotros">Quiénes Somos</a></li>
+            <li><a href="#pilotos">Pilotos</a></li>
+            <li><a href="#combos">Combos</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Vuela donde los sueños despegan</h2>
+            <p>Experiencias únicas en globo aerostático desde 2010.</p>
+            <a href="#reservas" class="btn">¡Reserva Ahora!</a>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+        <h2>Nuestros momentos en el cielo</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria1.png" alt="Globo al amanecer">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria2.png" alt="Vista panorámica">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria3.jpg" alt="Celebración en vuelo">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria4.jpg" alt="Otro momento en globo">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria5.jpg" alt="Más globos en el cielo">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria6.jpg" alt="Más globos en el cielo">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria7.jpg" alt="Más globos en el cielo">
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/img/galeria8.jpg" alt="Más globos en el cielo">
+                </div>
+            </div>
+            
+            <div class="carousel-nav">
+                </div>
+            
+            <div class="carousel-btn prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="carousel-btn next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros servicios</h2>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="./assets/img/servicio1.jpg" alt="Vuelo al Amanecer">
+                <h3>Vuelo al Amanecer</h3>
+                <p>Despega al alba y disfruta de colores mágicos.</p>
+                <span class="price">$199 USD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/img/servicio2.jpg" alt="Vuelo al Atardecer">
+                <h3>Vuelo al Atardecer</h3>
+                <p>Atardeceres que robarán tu aliento.</p>
+                <span class="price">$219 USD</span>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/img/servicio3.jpg" alt="Vuelo Privado">
+                <h3>Vuelo Privado</h3>
+                <p>Exclusividad para parejas o grupos pequeños.</p>
+                <span class="price">$499 USD</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about-us">
+        <h2>¿Quiénes somos?</h2>
+        <div class="about-content">
+            <p>En SkyBalloons, transformamos sueños en realidades elevadas. Desde 2010, hemos sido pioneros en ofrecer experiencias inolvidables en globo aerostático, combinando aventura, seguridad y la majestuosidad del cielo.</p>
+            <p>Nuestra pasión por el vuelo nos impulsa a crear momentos mágicos, brindando vistas panorámicas espectaculares y un servicio excepcional que te acompañará desde el momento del despegue hasta un aterrizaje suave y memorable. Únete a la familia SkyBalloons y descubre la libertad de volar.</p>
+            
+            <div class="about-features">
+                <div class="feature-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>10+ Años de Experiencia</h3>
+                    <p>Más de una década creando experiencias inolvidables</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Seguridad Primero</h3>
+                    <p>Equipos certificados y protocolos de seguridad rigurosos</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-smile"></i>
+                    <h3>10,000+ Clientes Felices</h3>
+                    <p>Testimonios que respaldan nuestra calidad de servicio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilotos" class="pilots">
+        <h2>Conoce a nuestros pilotos</h2>
+
+        <div class="pilots-grid">
+            <div class="pilot-card">
+                <img src="./assets/img/piloto1.jpg" alt="Piloto Carlos Méndez">
+                <h3>Carlos Méndez</h3>
+                <p>+500 vuelos | Especialista en rutas escénicas.</p>
+            </div>
+
+            <div class="pilot-card">
+                <img src="./assets/img/piloto2.jpg" alt="Piloto Ana Torres">
+                <h3>Ana Torres</h3>
+                <p>+800 vuelos | Instructora certificada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="combos" class="combos">
+        <h2>Combos Especiales</h2>
+
+        <div class="combo-grid">
+            <div class="combo-card">
+                <h3>Combo Aventurero</h3>
+                <ul>
+                    <li>Vuelo + Fotografía profesional</li>
+                    <li>Desayuno campestre</li>
+                    <li>Certificado de vuelo</li>
+                </ul>
+                <span class="price">$299 USD</span>
+                <a href="#reservas" class="btn">Reservar</a>
+            </div>
+
+            <div class="combo-card">
+                <h3>Combo Premium</h3>
+                <ul>
+                    <li>Vuelo privado + Champagne</li>
+                    <li>Álbum fotográfico físico</li>
+                    <li>Traslado incluido</li>
+                </ul>
+                <span class="price">$599 USD</span>
+                <a href="#reservas" class="btn">Reservar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="booking">
+        <h2>Reserva tu experiencia</h2>
+
+        <form id="booking-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono" required>
+
+            <select id="service-select" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="amanecer" data-price="199">Vuelo al Amanecer - $199 USD</option>
+                <option value="atardecer" data-price="219">Vuelo al Atardecer - $219 USD</option>
+                <option value="privado" data-price="499">Vuelo Privado - $499 USD</option>
+                <option value="combo" data-price="299">Combo Aventurero - $299 USD</option>
+                <option value="premium" data-price="599">Combo Premium - $599 USD</option>
+            </select>
+
+            <label for="numTickets">Número de boletos / personas:</label>
+            <input id="numTickets" type="number" min="1" value="1" required>
+            <input type="date" required>
+            <textarea placeholder="Mensaje adicional (opcional)"></textarea>
+            
+            <div id="total-price-container">
+                <strong>Total a pagar: </strong><span id="total-price">0</span> USD
+            </div>
+            
+            <hr />
+            
+            <div id="card-element"></div>
+            <div id="card-errors" role="alert" style="color: red; margin-top: 8px;"></div>
+            
+            <button type="submit" class="btn" id="submit-button">Pagar y Reservar</button>
+        </form>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Av. del Globo 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> hola@skyballoons.com</p>
+
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15026.046096538965!2d-98.85233155!3d19.687441549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e2e921d239b3%3A0x6b245a49c9523b18!2sZona%20Arqueol%C3%B3gica%20de%20Teotihuac%C3%A1n!5e0!3m2!1ses-419!2smx!4v1717947196010!5m2!1ses-419!2smx"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 <strong>SkyBalloons</strong>. Todos los derechos reservados.</p>
+        <a href="#">Términos y Condiciones</a>
+    </footer>
+
+    <div id="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Abrir chat"><i class="fas fa-comment-dots"></i></button>
+        <div id="chatbot" class="chatbot" style="display:none; flex-direction:column;">
+            <div id="chat-messages" class="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." autocomplete="off">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
